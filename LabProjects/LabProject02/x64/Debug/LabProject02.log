@@ -1,9 +1,6 @@
 ﻿  GameFramework.cpp
-C:\Users\user\Desktop\3TEST\3TEST\LabProjects\LabProject02\GameFramework.cpp(11,2): error C2065: 'm_pd3dPipelineState': 선언되지 않은 식별자입니다.
-C:\Users\user\Desktop\3TEST\3TEST\LabProjects\LabProject02\GameFramework.cpp(40,2): error C3861: 'CreateRenderTargetViews': 식별자를 찾을 수 없습니다.
-C:\Users\user\Desktop\3TEST\3TEST\LabProjects\LabProject02\GameFramework.cpp(57,6): error C2065: 'm_pd3dPipelineState': 선언되지 않은 식별자입니다.
-C:\Users\user\Desktop\3TEST\3TEST\LabProjects\LabProject02\GameFramework.cpp(57,27): error C2065: 'm_pd3dPipelineState': 선언되지 않은 식별자입니다.
-C:\Users\user\Desktop\3TEST\3TEST\LabProjects\LabProject02\GameFramework.cpp(106,2): error C2018: '0x60' 문자를 인식할 수 없습니다.
+C:\Users\wntjr\Desktop\3TEST\LabProjects\LabProject02\GameFramework.cpp(2,10): error C2001: 상수에 줄 바꿈 문자가 있습니다.
+C:\Users\wntjr\Desktop\3TEST\LabProjects\LabProject02\GameFramework.cpp(2,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'GameFramework.h“': No such file or directory
   LabProject02.cpp
   Mesh.cpp
   Player.cpp

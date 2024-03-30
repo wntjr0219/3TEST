@@ -1,0 +1,8 @@
+﻿  GameFramework.cpp
+C:\Users\wntjr\Desktop\3TEST\LabProjects\LabProject02\GameFramework.cpp(2,10): error C2001: 상수에 줄 바꿈 문자가 있습니다.
+C:\Users\wntjr\Desktop\3TEST\LabProjects\LabProject02\GameFramework.cpp(2,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'GameFramework.h“': No such file or directory
+  LabProject02.cpp
+  Mesh.cpp
+  Player.cpp
+  Scene.cpp
+  코드를 생성하고 있습니다...

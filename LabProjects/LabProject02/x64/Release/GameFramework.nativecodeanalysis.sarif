@@ -1,0 +1,351 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'CGameFramework::m_hInstance' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 17,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CGameFramework::{ctor}",
+                  "decoratedName": "??0CGameFramework@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CGameFramework::m_hInstance"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'CGameFramework::m_hWnd' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 17,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CGameFramework::{ctor}",
+                  "decoratedName": "??0CGameFramework@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CGameFramework::m_hWnd"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'CGameFramework::m_d3dViewport' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 17,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CGameFramework::{ctor}",
+                  "decoratedName": "??0CGameFramework@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CGameFramework::m_d3dViewport"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'CGameFramework::m_d3dScissorRect' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 17,
+                  "endLine": 5,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CGameFramework::{ctor}",
+                  "decoratedName": "??0CGameFramework@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CGameFramework::m_d3dScissorRect"
+          }
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'m_pd3dCommandAllocator'은(는) '0'일 수 있습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                },
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CGameFramework::CreateCommandQueueAndList",
+                  "decoratedName": "?CreateCommandQueueAndList@CGameFramework@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                          },
+                          "region": {
+                            "startLine": 188,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                          },
+                          "region": {
+                            "startLine": 189,
+                            "startColumn": 4
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                          },
+                          "region": {
+                            "startLine": 190,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                          },
+                          "region": {
+                            "startLine": 191,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                          },
+                          "region": {
+                            "startLine": 192,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                          },
+                          "region": {
+                            "startLine": 194,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                          },
+                          "region": {
+                            "startLine": 197,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'m_pd3dCommandAllocator'은(는) NULL(이)면 안 됩니다. 이는 'ID3D12Device::CreateCommandList'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '*' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '*' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+                },
+                "region": {
+                  "startLine": 393,
+                  "startColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CGameFramework::FrameAdvance",
+                  "decoratedName": "?FrameAdvance@CGameFramework@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32532.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/wntjr/Desktop/3TEST/LabProjects/LabProject02/GameFramework.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "65537813108bda2ab16ef7f4091c6667c0731179f151face57ad0a442719bb37"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wntjr/desktop/3test/labprojects/labproject02/stdafx.h"
+          },
+          "hashes": {
+            "sha-256": "70df9f871354febdf73bc173ca015dd25c392855daf20748fa68c32dd671e79c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wntjr/desktop/3test/labprojects/labproject02/targetver.h"
+          },
+          "hashes": {
+            "sha-256": "4c0ecfce2e299054ce6f0fa2d24a546e45b0ccc67e36e03e1016f2e18762a226"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wntjr/desktop/3test/labprojects/labproject02/gameframework.h"
+          },
+          "hashes": {
+            "sha-256": "c9723371754a872fee6a5f671364484d06ba6632f5d18e4d912b02d3ff0b61d6"
+          }
+        }
+      ]
+    }
+  ]
+}

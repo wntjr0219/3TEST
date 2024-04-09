@@ -1,8 +1,202 @@
-﻿  GameFramework.cpp
-C:\Users\wntjr\Desktop\3TEST\LabProjects\LabProject02\GameFramework.cpp(2,10): error C2001: 상수에 줄 바꿈 문자가 있습니다.
-C:\Users\wntjr\Desktop\3TEST\LabProjects\LabProject02\GameFramework.cpp(2,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'GameFramework.h“': No such file or directory
-  LabProject02.cpp
-  Mesh.cpp
-  Player.cpp
-  Scene.cpp
-  코드를 생성하고 있습니다...
+﻿C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(33): error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(38) : error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(53) : warning RC4093: unescaped newline in character constant in inactive code
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(53): warning RC4093: unescaped newline in character constant in inactive code
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\implements.h(1547): error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\implements.h(1777) : warning RC4011: identifier truncated to '__WRL_FORCE_INSPECTABLE_CLASS_M'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\implements.h(1995): error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\implements.h(2068) : warning RC4011: identifier truncated to '__WRL_FORCE_INSPECTABLE_CLASS_M'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(53): warning RC4093: unescaped newline in character constant in inactive code
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(53): warning RC4093: unescaped newline in character constant in inactive code
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(53): warning RC4093: unescaped newline in character constant in inactive code
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(13): error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(88) : error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1933) : error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1934): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1935): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1936): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1937): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1938): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1938): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1938): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1938): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1939): error RC2021: expected exponent value, not '4'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1939): error RC2021: expected exponent value, not '4'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1939): error RC2021: expected exponent value, not '5'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1939): error RC2021: expected exponent value, not '5'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1946): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1981): error RC2021: expected exponent value, not '7'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1981): error RC2021: expected exponent value, not '7'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1981): error RC2021: expected exponent value, not '7'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1981): error RC2021: expected exponent value, not '7'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2050): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2050): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2050): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2050): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2051): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2051): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2051): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2051): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2052): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2052): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2052): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2052): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2053): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2053): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2053): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2053): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2054): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2054): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2054): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2054): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2055): error RC2021: expected exponent value, not '4'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2055): error RC2021: expected exponent value, not '4'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2055): error RC2021: expected exponent value, not '4'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2055): error RC2021: expected exponent value, not '4'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2056): error RC2021: expected exponent value, not '5'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2056): error RC2021: expected exponent value, not '5'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2056): error RC2021: expected exponent value, not '5'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2056): error RC2021: expected exponent value, not '5'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2066): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2066): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2066): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2066): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2068): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2068): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2068): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2068): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMathMisc.inl(2190): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMathMisc.inl(2190): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMathMisc.inl(2259): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMathMisc.inl(2259): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMathMisc.inl(2347): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMathMisc.inl(2347): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMathMisc.inl(2350): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMathMisc.inl(2350): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(13): error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(88) : error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1933) : error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1934): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1935): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1936): error RC2021: expected exponent value, not '0'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1937): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1938): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1938): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1938): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1938): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1939): error RC2021: expected exponent value, not '4'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1939): error RC2021: expected exponent value, not '4'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1939): error RC2021: expected exponent value, not '5'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1939): error RC2021: expected exponent value, not '5'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1946): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1981): error RC2021: expected exponent value, not '7'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1981): error RC2021: expected exponent value, not '7'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1981): error RC2021: expected exponent value, not '7'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(1981): error RC2021: expected exponent value, not '7'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2050): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2050): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2050): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2050): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2051): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2051): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2051): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2051): error RC2021: expected exponent value, not '1'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2052): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2052): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2052): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2052): error RC2021: expected exponent value, not '2'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2053): error RC2021: expected exponent value, not '3'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(2053): fatal error RC1003: error count exceeds 100; stopping compilation
+  

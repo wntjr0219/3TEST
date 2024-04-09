@@ -15,8 +15,8 @@
 #include <tchar.h>
 #include <math.h>
 
-#define FRAMEBUFFER_WIDTH 800
-#define FRAMEBUFFER_HEIGHT 600
+#define FRAME_BUFFER_WIDTH 800
+#define FRAME_BUFFER_HEIGHT 600
 
 #define DegreeToRadian(x) float((x)*3.141592654f/180.0f)
 

@@ -1,6 +1,4 @@
-﻿  GameFramework.cpp
-  LabProject02.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(33): error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(38) : error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(53) : warning RC4093: unescaped newline in character constant in inactive code
+﻿C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(33): error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(38) : error RC2188: C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(53) : warning RC4093: unescaped newline in character constant in inactive code
   
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt\wrl\def.h(53): warning RC4093: unescaped newline in character constant in inactive code
   

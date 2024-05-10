@@ -19,6 +19,10 @@ void CPlayer::SetPosition(float x, float y, float z)
 	CGameObject::SetPosition(x, y, z);
 }
 
+void CPlayer::SetRotation(float x, float y, float z)
+{
+}
+
 void CPlayer::SetCameraOffset(XMFLOAT3& xmf3CameraOffset)
 {
 	m_xmf3CameraOffset = xmf3CameraOffset;
@@ -214,3 +218,33 @@ void CAirplanePlayer::FireBullet(CGameObject* pLockedObject)
 		}
 	}
 }
+// ½Çµå
+void CAirplanePlayer::shield()
+{
+	CCubeMesh* pDefenceMesh = new CCubeMesh(5.0f, 5.0f, 5.0f);
+	XMFLOAT3 xmf3Position = GetPosition();
+
+	for (int i = 0; i < SHIELDS; ++i)
+	{
+		m_pShields[i] = new CDefenceObject();
+		m_pShields[i]->SetMesh(pDefenceMesh);
+		m_pShields[i]->SetRotationAxis(XMFLOAT3(0.0f, 0.0f, 0.0f));
+		m_pShields[i]->SetPosition(xmf3Position);
+		m_pShields[i]->SetRotationSpeed((float)i * 30.0f);
+		m_pShields[i]->SetMovingSpeed(0.0f);
+		m_pShields[i]->SetColor(RGB(30, 220, 70));
+
+		
+		/*CExplosiveObject* pExplosiveObject = new CExplosiveObject();
+		pExplosiveObject->SetMesh(pCubeMesh);
+		pExplosiveObject->SetColor(RGB(255, 0, 0));
+		pExplosiveObject->SetPosition(-13.5f, 0.0f, -14.0f);
+		pExplosiveObject->SetRotationAxis(XMFLOAT3(0.0f, 1.0f, 1.0f));
+		pExplosiveObject->SetRotationSpeed(90.0f);
+		pExplosiveObject->SetMovingDirection(XMFLOAT3(1.0f, 0.0f, 0.0f));
+		pExplosiveObject->SetMovingSpeed(10.5f);
+		m_ppObjects[0] = pExplosiveObject;*/
+	}
+	
+}
+

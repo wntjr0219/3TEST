@@ -269,7 +269,7 @@ void CExplosiveObject::Animate(float fElapsedTime)
 	}
 	else
 	{
-		CRotatingObject::Animate(fElapsedTime);
+		CGameObject::Animate(fElapsedTime); // 상속 갱신
 	}
 }
 
@@ -428,5 +428,15 @@ void CAxisObject::Render(HDC hDCFrameBuffer, CCamera* pCamera)
 	CGraphicsPipeline::SetWorldTransform(&m_xmf4x4World);
 
 	m_pMesh->Render(hDCFrameBuffer);
+}
+
+// 실드 객체
+
+CDefenceObject::CDefenceObject()
+{
+}
+
+CDefenceObject::~CDefenceObject()
+{
 }
 

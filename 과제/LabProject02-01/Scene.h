@@ -16,7 +16,7 @@ private:
 
 	CWallsObject*				m_pWallsObject = NULL;
 
-	CPlayer*					m_pPlayer = NULL;
+	CPlayer*					m_pPlayer = NULL; 
 
 #ifdef _WITH_DRAW_AXIS
 	CGameObject*				m_pWorldAxis = NULL;
@@ -33,6 +33,8 @@ public:
 
 	virtual void Animate(float fElapsedTime);
 	virtual void Render(HDC hDCFrameBuffer, CCamera* pCamera);
+
+	void CheckPlayerByBulletCollisions();
 
 	virtual void OnProcessingMouseMessage(HWND hWnd, UINT nMessageID, WPARAM wParam, LPARAM lParam);
 	virtual void OnProcessingKeyboardMessage(HWND hWnd, UINT nMessageID, WPARAM wParam, LPARAM lParam);

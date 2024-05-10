@@ -51,7 +51,7 @@ public:
 };
 
 #define BULLETS					50
-
+#define SHIELDS					6
 class CAirplanePlayer : public CPlayer
 {
 public:
@@ -60,8 +60,11 @@ public:
 
 	float						m_fBulletEffectiveRange = 150.0f;
 	CBulletObject*				m_ppBullets[BULLETS];
+	CDefenceObject*				m_pShields[SHIELDS];
 
 	void FireBullet(CGameObject* pLockedObject);
+
+	void shield();
 
 	virtual void OnUpdateTransform();
 	virtual void Animate(float fElapsedTime);

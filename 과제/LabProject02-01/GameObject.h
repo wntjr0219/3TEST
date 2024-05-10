@@ -84,30 +84,33 @@ public:
 	virtual void Animate(float fElapsedTime);
 };
 
-class CExplosiveObject : public CRotatingObject
-{
-public:
-	CExplosiveObject();
-	virtual ~CExplosiveObject();
 
-	bool						m_bBlowingUp = false;
 
-	XMFLOAT4X4					m_pxmf4x4Transforms[EXPLOSION_DEBRISES];
 
-	float						m_fElapsedTimes = 0.0f;
-	float						m_fDuration = 2.0f;
-	float						m_fExplosionSpeed = 10.0f;
-	float						m_fExplosionRotation = 720.0f;
-
-	virtual void Animate(float fElapsedTime);
-	virtual void Render(HDC hDCFrameBuffer, CCamera* pCamera);
-
-public:
-	static CMesh*				m_pExplosionMesh;
-	static XMFLOAT3				m_pxmf3SphereVectors[EXPLOSION_DEBRISES];
-
-	static void PrepareExplosion();
-};
+//class CExplosiveObject : public CRotatingObject
+//{
+//public:
+//	CExplosiveObject();
+//	virtual ~CExplosiveObject();
+//
+//	bool						m_bBlowingUp = false;
+//
+//	XMFLOAT4X4					m_pxmf4x4Transforms[EXPLOSION_DEBRISES];
+//
+//	float						m_fElapsedTimes = 0.0f;
+//	float						m_fDuration = 2.0f;
+//	float						m_fExplosionSpeed = 10.0f;
+//	float						m_fExplosionRotation = 720.0f;
+//
+//	virtual void Animate(float fElapsedTime);
+//	virtual void Render(HDC hDCFrameBuffer, CCamera* pCamera);
+//
+//public:
+//	static CMesh*				m_pExplosionMesh;
+//	static XMFLOAT3				m_pxmf3SphereVectors[EXPLOSION_DEBRISES];
+//
+//	static void PrepareExplosion();
+//};
 
 class CWallsObject : public CGameObject
 {
@@ -152,4 +155,48 @@ public:
 	virtual ~CAxisObject() { }
 
 	virtual void Render(HDC hDCFrameBuffer, CCamera* pCamera);
+};
+
+#define BULLETS 50
+//  적기 오브젝트 상속 갱신 
+class CExplosiveObject : public CGameObject
+{
+public:
+	CExplosiveObject();
+	virtual ~CExplosiveObject();
+
+	bool						m_bBlowingUp = false;
+
+	XMFLOAT4X4					m_pxmf4x4Transforms[EXPLOSION_DEBRISES];
+
+	float						m_fElapsedTimes = 0.0f;
+	float						m_fDuration = 2.0f;
+	float						m_fExplosionSpeed = 10.0f;
+	float						m_fExplosionRotation = 720.0f;
+	CBulletObject* m_ppBullets[BULLETS];
+	virtual void Animate(float fElapsedTime);
+	virtual void Render(HDC hDCFrameBuffer, CCamera* pCamera);
+
+
+
+public:
+	static CMesh* m_pExplosionMesh;
+	static XMFLOAT3				m_pxmf3SphereVectors[EXPLOSION_DEBRISES];
+
+	static void PrepareExplosion();
+};
+
+
+
+
+class CDefenceObject : public CExplosiveObject
+{
+public:
+	CDefenceObject();
+	virtual ~CDefenceObject();
+
+	XMFLOAT3                    m_xmf3RotationAxis = XMFLOAT3(0.0f, 1.0f, 0.0f);
+	float                       m_fRotationSpeed = 0.0f;
+	void SetRotationAxis(XMFLOAT3& xmf3RotationAxis) { m_xmf3RotationAxis = Vector3::Normalize(xmf3RotationAxis); }
+	void SetRotationSpeed(float fSpeed) { m_fRotationSpeed = fSpeed; }
 };

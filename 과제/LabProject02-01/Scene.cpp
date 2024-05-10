@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Scene.h"
 #include "GraphicsPipeline.h"
-
+#include "Player.h"
 CScene::CScene(CPlayer* pPlayer)
 {
 	m_pPlayer = pPlayer;
@@ -30,108 +30,101 @@ void CScene::BuildObjects()
 	m_pWallsObject->m_pxmf4WallPlanes[5] = XMFLOAT4(0.0f, 0.0f, -1.0f, fHalfDepth);
 	m_pWallsObject->m_xmOOBBPlayerMoveCheck = BoundingOrientedBox(XMFLOAT3(0.0f, 0.0f, 0.0f), XMFLOAT3(fHalfWidth, fHalfHeight, fHalfDepth * 0.05f), XMFLOAT4(0.0f, 0.0f, 0.0f, 1.0f));
 
-	CCubeMesh* pCubeMesh = new CCubeMesh(4.0f, 4.0f, 4.0f);
 
+	// 큐브 -> 적기
+	CAirplaneMesh* pEnemyMesh = new CAirplaneMesh(6.0f, 6.0f, 1.0f);
 	m_nObjects = 10;
 	m_ppObjects = new CGameObject * [m_nObjects];
 
+	
 	CExplosiveObject *pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(255, 0, 0));
 	pExplosiveObject->SetPosition(-13.5f, 0.0f, -14.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(0.0f, 1.0f, 1.0f));
-	pExplosiveObject->SetRotationSpeed(90.0f);
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
 	pExplosiveObject->SetMovingDirection(XMFLOAT3(1.0f, 0.0f, 0.0f));
 	pExplosiveObject->SetMovingSpeed(10.5f);
 	m_ppObjects[0] = pExplosiveObject;
+	
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(0, 0, 255));
 	pExplosiveObject->SetPosition(+13.5f, 0.0f, -14.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(1.0f, 1.0f, 0.0f));
-	pExplosiveObject->SetRotationSpeed(180.0f);
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
 	pExplosiveObject->SetMovingDirection(XMFLOAT3(-1.0f, 0.0f, 0.0f));
 	pExplosiveObject->SetMovingSpeed(8.8f);
 	m_ppObjects[1] = pExplosiveObject;
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(0, 255, 0));
 	pExplosiveObject->SetPosition(0.0f, +5.0f, 20.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(1.0f, 1.0f, 0.0f));
-	pExplosiveObject->SetRotationSpeed(30.15f);
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
 	pExplosiveObject->SetMovingDirection(XMFLOAT3(1.0f, -1.0f, 0.0f));
 	pExplosiveObject->SetMovingSpeed(5.2f);
 	m_ppObjects[2] = pExplosiveObject;
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(0, 255, 255));
 	pExplosiveObject->SetPosition(0.0f, 0.0f, 0.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(0.0f, 1.0f, 1.0f));
-	pExplosiveObject->SetRotationSpeed(40.6f);
-	pExplosiveObject->SetMovingDirection(XMFLOAT3(0.0f, 0.0f, 1.0f));
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
+	pExplosiveObject->SetMovingDirection(XMFLOAT3(-0.2f, 0.0f, 1.0f));
 	pExplosiveObject->SetMovingSpeed(20.4f);
 	m_ppObjects[3] = pExplosiveObject;
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(128, 0, 255));
 	pExplosiveObject->SetPosition(10.0f, 0.0f, 0.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(0.0f, 1.0f, 0.0f));
-	pExplosiveObject->SetRotationSpeed(50.06f);
-	pExplosiveObject->SetMovingDirection(XMFLOAT3(0.0f, 1.0f, 1.0f));
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
+	pExplosiveObject->SetMovingDirection(XMFLOAT3(-0.1f, 1.0f, 1.0f));
 	pExplosiveObject->SetMovingSpeed(6.4f);
 	m_ppObjects[4] = pExplosiveObject;
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(255, 0, 255));
-	pExplosiveObject->SetPosition(-10.0f, 0.0f, -10.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(0.0f, 1.0f, 0.0f));
-	pExplosiveObject->SetRotationSpeed(60.06f);
-	pExplosiveObject->SetMovingDirection(XMFLOAT3(1.0f, 0.0f, 1.0f));
+	pExplosiveObject->SetPosition(40.0f, 0.0f, -10.0f);
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
+	pExplosiveObject->SetMovingDirection(XMFLOAT3(-1.0f, 0.0f, -0.5f));
 	pExplosiveObject->SetMovingSpeed(8.9f);
 	m_ppObjects[5] = pExplosiveObject;
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(255, 0, 255));
 	pExplosiveObject->SetPosition(-10.0f, 10.0f, -10.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(0.0f, 1.0f, 0.0f));
-	pExplosiveObject->SetRotationSpeed(60.06f);
-	pExplosiveObject->SetMovingDirection(XMFLOAT3(1.0f, 1.0f, 1.0f));
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
+	pExplosiveObject->SetMovingDirection(XMFLOAT3(-1.0f, 1.0f, 1.0f));
 	pExplosiveObject->SetMovingSpeed(9.7f);
 	m_ppObjects[6] = pExplosiveObject;
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(255, 0, 128));
 	pExplosiveObject->SetPosition(-10.0f, 10.0f, -20.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(0.0f, 1.0f, 0.0f));
-	pExplosiveObject->SetRotationSpeed(70.06f);
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
 	pExplosiveObject->SetMovingDirection(XMFLOAT3(-1.0f, 1.0f, 1.0f));
 	pExplosiveObject->SetMovingSpeed(15.6f);
 	m_ppObjects[7] = pExplosiveObject;
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(128, 0, 255));
 	pExplosiveObject->SetPosition(-15.0f, 10.0f, -30.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(1.0f, 1.0f, 0.0f));
-	pExplosiveObject->SetRotationSpeed(90.06f);
-	pExplosiveObject->SetMovingDirection(XMFLOAT3(0.0f, 0.0f, -1.0f));
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
+	pExplosiveObject->SetMovingDirection(XMFLOAT3(-0.4f, 0.0f, -1.0f));
 	pExplosiveObject->SetMovingSpeed(15.0f);
 	m_ppObjects[8] = pExplosiveObject;
 
 	pExplosiveObject = new CExplosiveObject();
-	pExplosiveObject->SetMesh(pCubeMesh);
+	pExplosiveObject->SetMesh(pEnemyMesh);
 	pExplosiveObject->SetColor(RGB(255, 64, 64));
 	pExplosiveObject->SetPosition(+15.0f, 10.0f, 0.0f);
-	pExplosiveObject->SetRotationAxis(XMFLOAT3(1.0f, 1.0f, 0.0f));
-	pExplosiveObject->SetRotationSpeed(90.06f);
-	pExplosiveObject->SetMovingDirection(XMFLOAT3(-0.0f, 0.0f, -1.0f));
+	pExplosiveObject->Rotate(-90.0f, 0.0f, 0.0f);
+	pExplosiveObject->SetMovingDirection(XMFLOAT3(-0.1f, 0.0f, -1.0f));
 	pExplosiveObject->SetMovingSpeed(15.0f);
 	m_ppObjects[9] = pExplosiveObject;
 
@@ -188,6 +181,8 @@ void CScene::OnProcessingKeyboardMessage(HWND hWnd, UINT nMessageID, WPARAM wPar
 				pExplosiveObject->m_bBlowingUp = true;
 			}
 			break;
+		/*case 'S':
+			break;*/
 		default:
 			break;
 		}
@@ -363,4 +358,22 @@ void CScene::Render(HDC hDCFrameBuffer, CCamera* pCamera)
 	m_pWorldAxis->SetRotationTransform(&m_pPlayer->m_xmf4x4World);
 	m_pWorldAxis->Render(hDCFrameBuffer, pCamera);
 #endif
+}
+
+void CScene::CheckPlayerByBulletCollisions()
+{
+
+	for (int i = 0; i < m_nObjects; ++i)
+	{
+		CBulletObject** ppBullets = ((CExplosiveObject*)m_ppObjects[i])->m_ppBullets;
+
+		for (int j = 0; j < BULLETS; j++)
+		{
+			if (ppBullets[j]->m_bActive && m_pPlayer->m_xmOOBB.Intersects(ppBullets[j]->m_xmOOBB))
+			{
+				//CAirplanePlayer* pExplosiveObject = ((CAirplanePlayer*)m_pPlayer);
+				ppBullets[j]->Reset();
+			}
+		}
+	}
 }
